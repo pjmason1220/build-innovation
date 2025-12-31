@@ -22,9 +22,16 @@ export default function Contact() {
     setStatus("loading");
 
     try {
-      // TODO: Replace with your Formspree endpoint or API route
-      // For now, this is a placeholder that simulates form submission
-      const response = await fetch("https://formspree.io/f/YOUR_FORM_ID", {
+      // Submit to Formspree
+      const formspreeId = process.env.NEXT_PUBLIC_FORMSPREE_ID;
+
+      if (!formspreeId) {
+        console.error("Formspree ID not configured");
+        setStatus("error");
+        return;
+      }
+
+      const response = await fetch(`https://formspree.io/f/${formspreeId}`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
