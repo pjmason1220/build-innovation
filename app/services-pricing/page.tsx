@@ -35,6 +35,8 @@ export default function Services() {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
             <ServiceCard
               title="Innovation Capability Assessment"
+              price="$30,000"
+              duration="6-8 weeks"
               description="Comprehensive diagnostic of your current innovation capability with actionable roadmap for improvement."
               features={[
                 "Current state analysis across people, process, and technology",
@@ -47,6 +49,8 @@ export default function Services() {
 
             <ServiceCard
               title="Capability Build Programs"
+              price="$200-225K"
+              duration="12-18 months"
               description="Full engagement to build and internalize world-class innovation capabilities that drive sustainable growth."
               features={[
                 "Talent recruitment and team building",
@@ -61,6 +65,8 @@ export default function Services() {
 
             <ServiceCard
               title="Fractional Chief Design Officer"
+              price="$15K/month"
+              duration="Retainer basis"
               description="Ongoing strategic design leadership without the full-time executive commitment. Perfect for companies needing experienced guidance."
               features={[
                 "Strategic innovation leadership",
@@ -94,7 +100,7 @@ export default function Services() {
                 </p>
 
                 <div className="bg-primary text-white rounded-lg p-6 mb-6">
-                  <h3 className="font-bold text-xl mb-3">Program Details</h3>
+                  <h3 className="font-bold text-xl mb-3">Investment: $30,000</h3>
                   <p className="text-gray-100 mb-2">Timeline: 6-8 weeks</p>
                   <p className="text-gray-100">
                     Deliverable: Comprehensive assessment report + executive
@@ -319,7 +325,7 @@ export default function Services() {
 
                 <div className="bg-primary text-white rounded-lg p-6 mb-6">
                   <h3 className="font-bold text-xl mb-3">
-                    Program Details
+                    Investment: $200-225K
                   </h3>
                   <p className="text-gray-100 mb-2">Timeline: 12-18 months</p>
                   <p className="text-gray-100 mb-4">
@@ -385,7 +391,7 @@ export default function Services() {
 
                 <div className="bg-primary text-white rounded-lg p-6 mb-6">
                   <h3 className="font-bold text-xl mb-3">
-                    Engagement Details
+                    Investment: $15,000/month
                   </h3>
                   <p className="text-gray-100 mb-2">
                     Engagement: Retainer-based, typically 12+ months

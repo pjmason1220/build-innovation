@@ -191,6 +191,7 @@ export default function Home() {
               <h3 className="text-2xl font-bold text-gray-900 mb-2">
                 Innovation Capability Assessment
               </h3>
+              <div className="text-3xl font-bold text-primary mb-4">$30K</div>
               <p className="text-gray-600 mb-6">
                 6-8 week diagnostic of your current innovation capability with
                 actionable roadmap for improvement.
@@ -237,6 +238,9 @@ export default function Home() {
               <h3 className="text-2xl font-bold mb-2">
                 Capability Build Programs
               </h3>
+              <div className="text-3xl font-bold text-white mb-4">
+                $200-225K
+              </div>
               <p className="text-gray-100 mb-6">
                 12-18 month engagement to build and internalize world-class
                 innovation capabilities.
@@ -288,6 +292,9 @@ export default function Home() {
               <h3 className="text-2xl font-bold text-gray-900 mb-2">
                 Fractional Chief Design Officer
               </h3>
+              <div className="text-3xl font-bold text-primary mb-4">
+                $15K/mo
+              </div>
               <p className="text-gray-600 mb-6">
                 Ongoing strategic design leadership without the full-time
                 commitment. Retainer-based engagement.

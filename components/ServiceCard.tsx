@@ -1,7 +1,7 @@
 interface ServiceCardProps {
   title: string;
-  price: string;
-  duration: string;
+  price?: string;
+  duration?: string;
   description: string;
   features: string[];
   highlighted?: boolean;
@@ -32,12 +32,16 @@ export default function ServiceCard({
       )}
 
       <h3 className="text-2xl font-bold mb-2">{title}</h3>
-      <div className="mb-4">
-        <span className="text-3xl font-bold">{price}</span>
-        <span className={`ml-2 ${highlighted ? "text-gray-200" : "text-gray-500"}`}>
-          {duration}
-        </span>
-      </div>
+      {price && (
+        <div className="mb-4">
+          <span className="text-3xl font-bold">{price}</span>
+          {duration && (
+            <span className={`ml-2 ${highlighted ? "text-gray-200" : "text-gray-500"}`}>
+              {duration}
+            </span>
+          )}
+        </div>
+      )}
 
       <p className={`mb-6 ${highlighted ? "text-gray-100" : "text-gray-600"}`}>
         {description}
